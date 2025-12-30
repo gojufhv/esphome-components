@@ -35,6 +35,7 @@ namespace
             "consumption_at_reporting_date_m3,total_m3,timestamp");
 
         di.addLinkMode(LinkMode::T1);
+        di.addLinkMode(LinkMode::C1);
 
         // Engelmann Water (0x07) – CI is intentionally NOT filtered
         di.addDetection(MANUFACTURER_EFE, 0x07, 0x00);
